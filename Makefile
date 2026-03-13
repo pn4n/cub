@@ -38,9 +38,9 @@ norm:
 	norminette $(SRCS) $(DEPS)
 
 clean:
-	rm -f $(OBJS)
+	rm -rf $(OBJDIR)
 
-flcean: clean
+fclean: clean
 	rm -f $(NAME)
 	
 re: fclean all
